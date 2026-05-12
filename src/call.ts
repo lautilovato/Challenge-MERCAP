@@ -6,11 +6,4 @@ export abstract class Call {
 
     abstract calculateCost(): number;
 
-    getDuration(): number { 
-        return this.durationInMinutes; 
-    }
-
-    getDate(): Date { 
-        return this.date; 
-    }
 }
