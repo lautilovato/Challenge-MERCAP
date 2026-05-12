@@ -13,7 +13,6 @@ export class LocalCall extends Call {
             return this.durationInMinutes * 0.10;
         }
 
-        return this.durationInMinutes * 0.20;
-        
+        return this.durationInMinutes * 0.20;     
     }
 }
