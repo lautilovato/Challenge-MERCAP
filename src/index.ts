@@ -6,7 +6,7 @@ import { Country } from './classes/country';
 import { Invoice } from './classes/invoice';
 
 // 1. Setup Reference Mocking Data 
-const cordoba = new Locality('Cordoba', 0.50);
+const cordobaCapital = new Locality('Cordoba Capital', 0.50);
 const usa = new Country('USA', 1.20);
 
 // 2. Simulate User Calls
@@ -20,7 +20,7 @@ const localCall2 = new LocalCall(new Date('2026-05-12T22:00:00'), 5);
 const localCall3 = new LocalCall(new Date('2026-05-10T10:00:00'), 20);
 
 // National Call -> 10 mins * 0.50 = $5.00
-const nationalCall = new NationalCall(new Date('2026-05-12T15:00:00'), 10, cordoba);
+const nationalCall = new NationalCall(new Date('2026-05-12T15:00:00'), 10, cordobaCapital);
 
 // International Call -> 5 mins * 1.20 = $6.00
 const internationalCall = new InternationalCall(new Date('2026-05-14T09:00:00'), 5, usa);
